@@ -1,0 +1,114 @@
+<section class="module-content">
+    <h2>Prompts para Generación</h2>
+    
+    <div class="intro">
+        <p>Usa estos prompts con herramientas de IA como GitHub Copilot, ChatGPT o Claude para generar especificaciones, planes y tareas de forma estructurada.</p>
+    </div>
+
+    <div class="prompt-container">
+        <h3>1. Prompt para Especificación</h3>
+        <p>Este prompt genera el archivo <code>spec.md</code> con la especificación completa del proyecto.</p>
+        
+        <div class="prompt-box">
+            <button class="btn-copy" data-target="prompt-spec" aria-label="Copiar prompt">
+                <span class="copy-icon">📋</span>
+                <span class="copy-text">Copiar</span>
+            </button>
+            <pre><code id="prompt-spec">Genera un archivo de especificaciones /specs/spec.md de menos de 200 líneas para construir una GitHubPage sobre un curso de Spec-Drive Development (SDD). Esta página se compone de menú lateral que permite navegar entre las distintas secciones HTML del curso:
+
+1- Instalación de OpenCode básica
+2- Que es sdd?
+    Resumen escueto en español de https://github.com/github/spec-kit/blob/main/spec-driven.md, enlace incluido
+3- Spec-kit, openspec y kiro
+    Descripción de cada herramienta y tabla comparativa
+4- Prompts para generar la especificación, el plan y las tareas
+    Cada prompt por separado con la opción de copiar el texto
+5- Ejemplo de especificación, plan y tareas
+    Cargar directamente en la web archivos markdown
+6- Practica: Hacer una todo page
+    Breve descripción con requistios mínimos
+
+Genera únicamente el archivo /specs/spec.md con la especificación del desarrollo manteniendo breve y conciso.
+
+Requisitos
+- La tecnología a usar GitHub Pages vanilla HTML/JS en una (SPA - Single Page Application) 
+- Todas los módulos que se carguen deben ser archivos HTML independientes
+- No debe haber ningún fragmento de código dentro de spec.md</code></pre>
+        </div>
+    </div>
+
+    <div class="prompt-container">
+        <h3>2. Prompt para Plan</h3>
+        <p>Este prompt genera el archivo <code>plan.md</code> con el plan de implementación.</p>
+        
+        <div class="prompt-box">
+            <button class="btn-copy" data-target="prompt-plan" aria-label="Copiar prompt">
+                <span class="copy-icon">📋</span>
+                <span class="copy-text">Copiar</span>
+            </button>
+            <pre><code id="prompt-plan">Lee specs\spec.md y genera plan.md para una web estática en GitHub Pages.
+
+Incluye: objetivo, alcance/no-alcance, estructura de páginas/secciones, navegación, contenido requerido, componentes UI y criterios de aceptación.
+
+Sé breve, práctico y alineado a lo descrito en la spec, sin repetir información innecesaria y sin escribir código.</code></pre>
+        </div>
+    </div>
+
+    <div class="prompt-container">
+        <h3>3. Prompt para Tareas</h3>
+        <p>Este prompt genera el archivo <code>tasks.md</code> con la lista de tareas a implementar.</p>
+        
+        <div class="prompt-box">
+            <button class="btn-copy" data-target="prompt-tasks" aria-label="Copiar prompt">
+                <span class="copy-icon">📋</span>
+                <span class="copy-text">Copiar</span>
+            </button>
+            <pre><code id="prompt-tasks">A partir de spec.md y plan.md, genera tasks.md con tareas concretas para implementar la web en GitHub Pages.
+Organiza las tareas por fases.
+El archivo debe ser claro y conciso, y NO debe incluir ninguna línea de código.
+Usa checkboxes Markdown (- [ ]) para cada tarea.
+Cada task debe incluir: descripción corta, archivos/carpetas sugeridas, dependencias y definición de "done".</code></pre>
+        </div>
+    </div>
+
+    <h3>Cómo Usar estos Prompts</h3>
+    <ol>
+        <li>Haz clic en el botón "Copiar" del prompt que necesites</li>
+        <li>Pega el prompt en tu herramienta de IA preferida</li>
+        <li>Ajusta los detalles específicos de tu proyecto si es necesario</li>
+        <li>Genera el documento y guárdalo en la carpeta correspondiente</li>
+        <li>Revisa y ajusta el contenido generado según tus necesidades</li>
+    </ol>
+
+    <div class="tip">
+        <h4>💡 Tips</h4>
+        <ul>
+            <li><strong>Iteración</strong>: Puedes usar estos prompts de forma iterativa, mejorando cada documento basándote en el feedback</li>
+            <li><strong>Contexto</strong>: Proporciona contexto adicional a la IA sobre tu proyecto específico para mejores resultados</li>
+            <li><strong>Orden</strong>: Genera siempre en orden: primero spec, luego plan, finalmente tasks</li>
+            <li><strong>Revisión humana</strong>: Siempre revisa y ajusta los documentos generados antes de usarlos</li>
+        </ul>
+    </div>
+
+    <div class="workflow">
+        <h3>Flujo de Trabajo Recomendado</h3>
+        <div class="workflow-steps">
+            <div class="workflow-step">
+                <strong>1. Spec</strong>
+                <p>Usa el primer prompt para generar la especificación. Define claramente QUÉ vas a construir.</p>
+            </div>
+            <div class="workflow-step">
+                <strong>2. Plan</strong>
+                <p>Con la spec lista, usa el segundo prompt para generar el plan. Define CÓMO lo vas a construir.</p>
+            </div>
+            <div class="workflow-step">
+                <strong>3. Tasks</strong>
+                <p>Con spec y plan listos, genera las tareas. Define los PASOS concretos de implementación.</p>
+            </div>
+            <div class="workflow-step">
+                <strong>4. Implementación</strong>
+                <p>Sigue las tareas una por una, marcándolas como completadas al terminar cada una.</p>
+            </div>
+        </div>
+    </div>
+</section>

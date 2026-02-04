@@ -1,1 +1,58 @@
-<h1>Hi!</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Spec-Driven Development</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+</head>
+<body>
+    <!-- Header Fijo -->
+    <header id="header" class="header">
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="header-content">
+            <img src="assets/logo.svg" alt="SDD Logo" class="logo" />
+            <h1>Spec-Driven Development</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar con menú de navegación -->
+        <nav id="sidebar" class="sidebar">
+            <ul class="nav-menu">
+                <li><a href="#instalacion" class="nav-link" data-section="instalacion">Instalación</a></li>
+                <li><a href="#que-es-sdd" class="nav-link" data-section="que-es-sdd">¿Qué es SDD?</a></li>
+                <li><a href="#herramientas" class="nav-link" data-section="herramientas">Herramientas</a></li>
+                <li><a href="#prompts" class="nav-link" data-section="prompts">Prompts</a></li>
+                <li><a href="#ejemplos" class="nav-link" data-section="ejemplos">Ejemplos</a></li>
+                <li><a href="#practica" class="nav-link" data-section="practica">Práctica</a></li>
+            </ul>
+        </nav>
+
+        <!-- Área de contenido dinámico -->
+        <main id="main-content" class="main-content">
+            <div class="content-wrapper">
+                <!-- El contenido se cargará dinámicamente aquí -->
+                <p>Cargando...</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Curso Spec-Driven Development. 
+            <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener noreferrer">GitHub Spec-kit</a> | 
+            <a href="https://github.com/github/spec-kit/blob/main/spec-driven.md" target="_blank" rel="noopener noreferrer">Documentación SDD</a>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

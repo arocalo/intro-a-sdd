@@ -1,0 +1,108 @@
+<section class="module-content">
+    <h2>Práctica: Todo Page</h2>
+    
+    <div class="intro">
+        <p>Aplica lo aprendido sobre Spec-Driven Development creando una aplicación de lista de tareas (Todo List) siguiendo el proceso completo.</p>
+    </div>
+
+    <h3>Descripción del Ejercicio</h3>
+    <p>Construye una aplicación web simple de gestión de tareas que permita a los usuarios crear, ver, editar y eliminar tareas. El proyecto debe seguir la metodología SDD completa.</p>
+
+    <h3>Requisitos Funcionales Mínimos</h3>
+    <div class="requirements">
+        <h4>CRUD Básico</h4>
+        <ul>
+            <li><strong>Crear</strong>: Agregar nuevas tareas con título y descripción</li>
+            <li><strong>Leer</strong>: Visualizar lista de todas las tareas</li>
+            <li><strong>Actualizar</strong>: Editar tareas existentes</li>
+            <li><strong>Eliminar</strong>: Borrar tareas de la lista</li>
+            <li><strong>Marcar como completada</strong>: Toggle para completar/descompletar tareas</li>
+        </ul>
+
+        <h4>Persistencia de Datos</h4>
+        <ul>
+            <li>Usar <code>localStorage</code> del navegador para guardar las tareas</li>
+            <li>Las tareas deben persistir al recargar la página</li>
+            <li>Implementar funciones de carga y guardado automático</li>
+        </ul>
+
+        <h4>Interfaz de Usuario</h4>
+        <ul>
+            <li>Formulario para agregar nuevas tareas</li>
+            <li>Lista visual de todas las tareas</li>
+            <li>Botones para editar y eliminar cada tarea</li>
+            <li>Indicador visual de tareas completadas (ej: tachado)</li>
+            <li>Diseño responsive básico</li>
+        </ul>
+    </div>
+
+    <h3>Proceso SDD a Seguir</h3>
+    <ol>
+        <li>
+            <strong>Escribir Especificación (spec.md)</strong>
+            <p>Define el objetivo, alcance, funcionalidades, estructura de datos y UI de tu Todo Page</p>
+        </li>
+        <li>
+            <strong>Crear Plan (plan.md)</strong>
+            <p>Diseña la arquitectura, estructura de archivos, componentes y flujo de datos</p>
+        </li>
+        <li>
+            <strong>Generar Tareas (tasks.md)</strong>
+            <p>Divide la implementación en tareas específicas organizadas por fases</p>
+        </li>
+        <li>
+            <strong>Implementar</strong>
+            <p>Escribe el código siguiendo las tareas, marcando cada una como completada</p>
+        </li>
+    </ol>
+
+    <h3>Tecnologías Sugeridas</h3>
+    <ul>
+        <li><strong>HTML5</strong>: Estructura semántica de la aplicación</li>
+        <li><strong>CSS3</strong>: Estilos y diseño responsive</li>
+        <li><strong>JavaScript vanilla</strong>: Lógica de la aplicación y manipulación del DOM</li>
+        <li><strong>localStorage API</strong>: Persistencia de datos en el navegador</li>
+    </ul>
+
+    <h3>Criterios de Completitud</h3>
+    <p>El ejercicio está completo cuando:</p>
+    <ul>
+        <li>✅ Los 3 documentos (spec, plan, tasks) están escritos y son coherentes</li>
+        <li>✅ Todas las tareas en tasks.md están marcadas como completadas</li>
+        <li>✅ La aplicación implementa CRUD completo</li>
+        <li>✅ Los datos persisten en localStorage correctamente</li>
+        <li>✅ La UI es funcional y responsive</li>
+        <li>✅ El código está limpio y comentado</li>
+    </ul>
+
+    <h3>Extensiones Opcionales</h3>
+    <p>Si quieres ir más allá, considera añadir:</p>
+    <ul>
+        <li>Filtros (todas, completadas, pendientes)</li>
+        <li>Búsqueda de tareas</li>
+        <li>Categorías o etiquetas</li>
+        <li>Fechas de vencimiento</li>
+        <li>Prioridades</li>
+        <li>Drag & drop para reordenar</li>
+        <li>Tema oscuro/claro</li>
+        <li>Estadísticas (tareas completadas, pendientes, etc.)</li>
+    </ul>
+
+    <div class="tip">
+        <h4>💡 Consejo</h4>
+        <p>No te saltes el proceso SDD. Aunque parezca más rápido empezar directamente con código, invertir tiempo en especificar y planear te ahorrará muchos dolores de cabeza durante la implementación.</p>
+    </div>
+
+    <div class="challenge">
+        <h4>🎯 Desafío Extra</h4>
+        <p>Después de completar tu Todo Page, usa los prompts de la sección anterior para que una IA genere nuevos documentos SDD para tu proyecto. Compara los resultados con tus documentos originales y observa qué puedes mejorar.</p>
+    </div>
+
+    <h3>Recursos de Ayuda</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" target="_blank" rel="noopener noreferrer">Documentación de localStorage (MDN)</a></li>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents" target="_blank" rel="noopener noreferrer">Manipulación del DOM (MDN)</a></li>
+        <li>Revisa los ejemplos en la sección anterior para ver cómo estructurar tus documentos</li>
+        <li>Usa los prompts de la sección "Prompts" para generar tus documentos con ayuda de IA</li>
+    </ul>
+</section>

@@ -34,7 +34,7 @@
 
 ## Fase 2: Estructura HTML Base
 
-### - [ ] Task 2.1: Crear index.html con layout principal
+### - [x] Task 2.1: Crear index.html con layout principal
 **Descripción:** Implementar el archivo index.html con la estructura completa del layout: header fijo, sidebar, área de contenido dinámico y footer.
 
 **Archivos/Carpetas:**
@@ -46,7 +46,7 @@
 
 ---
 
-### - [ ] Task 2.2: Crear módulos HTML de contenido
+### - [x] Task 2.2: Crear módulos HTML de contenido
 **Descripción:** Crear los 6 archivos HTML independientes en la carpeta modules con contenido estructurado pero sin estilos.
 
 **Archivos/Carpetas:**
@@ -65,7 +65,7 @@
 
 ## Fase 3: Estilos y Diseño
 
-### - [ ] Task 3.1: Implementar estilos base y tema oscuro
+### - [x] Task 3.1: Implementar estilos base y tema oscuro
 **Descripción:** Crear el archivo CSS con reset, variables de colores GitHub (negro, blanco, azul), tipografía base y estilos del tema oscuro.
 
 **Archivos/Carpetas:**
@@ -77,7 +77,7 @@
 
 ---
 
-### - [ ] Task 3.2: Estilizar layout principal (header, sidebar, footer)
+### - [x] Task 3.2: Estilizar layout principal (header, sidebar, footer)
 **Descripción:** Aplicar estilos al header fijo, menú lateral, área de contenido y footer según diseño especificado.
 
 **Archivos/Carpetas:**
@@ -89,7 +89,7 @@
 
 ---
 
-### - [ ] Task 3.3: Implementar diseño responsive
+### - [x] Task 3.3: Implementar diseño responsive
 **Descripción:** Añadir media queries para tablet y móvil, incluyendo estilos para menú hamburguesa colapsable en pantallas pequeñas.
 
 **Archivos/Carpetas:**
@@ -101,7 +101,7 @@
 
 ---
 
-### - [ ] Task 3.4: Estilizar componentes de contenido
+### - [x] Task 3.4: Estilizar componentes de contenido
 **Descripción:** Aplicar estilos a elementos de los módulos: botones, tablas, listas, bloques de código, enlaces y transiciones.
 
 **Archivos/Carpetas:**
@@ -115,7 +115,7 @@
 
 ## Fase 4: Funcionalidad JavaScript
 
-### - [ ] Task 4.1: Implementar router SPA básico
+### - [x] Task 4.1: Implementar router SPA básico
 **Descripción:** Crear la lógica de navegación SPA que escucha cambios en hash de URL y carga módulos HTML dinámicamente mediante fetch.
 
 **Archivos/Carpetas:**
@@ -127,7 +127,7 @@
 
 ---
 
-### - [ ] Task 4.2: Implementar gestión de menú lateral
+### - [x] Task 4.2: Implementar gestión de menú lateral
 **Descripción:** Añadir lógica para marcar la sección activa en el menú y sincronizarla con la URL actual.
 
 **Archivos/Carpetas:**
@@ -139,7 +139,7 @@
 
 ---
 
-### - [ ] Task 4.3: Implementar menú hamburguesa para móvil
+### - [x] Task 4.3: Implementar menú hamburguesa para móvil
 **Descripción:** Añadir funcionalidad toggle para mostrar/ocultar el menú lateral en dispositivos móviles, con cierre automático al seleccionar.
 
 **Archivos/Carpetas:**
@@ -151,7 +151,7 @@
 
 ---
 
-### - [ ] Task 4.4: Implementar funcionalidad de copiar al portapapeles
+### - [x] Task 4.4: Implementar funcionalidad de copiar al portapapeles
 **Descripción:** Añadir lógica para botones de copiar en la sección de prompts, con feedback visual de confirmación.
 
 **Archivos/Carpetas:**
@@ -163,7 +163,7 @@
 
 ---
 
-### - [ ] Task 4.5: Implementar scroll automático al top
+### - [x] Task 4.5: Implementar scroll automático al top
 **Descripción:** Añadir funcionalidad para hacer scroll automático al inicio del contenido al cambiar de sección.
 
 **Archivos/Carpetas:**
@@ -175,7 +175,7 @@
 
 ---
 
-### - [ ] Task 4.6: Implementar historial del navegador
+### - [x] Task 4.6: Implementar historial del navegador
 **Descripción:** Integrar gestión de historial para que los botones back/forward del navegador funcionen correctamente con el router SPA.
 
 **Archivos/Carpetas:**
@@ -189,7 +189,7 @@
 
 ## Fase 5: Contenido Específico
 
-### - [ ] Task 5.1: Completar contenido del módulo instalacion.html
+### - [x] Task 5.1: Completar contenido del módulo instalacion.html
 **Descripción:** Escribir el contenido completo sobre instalación de OpenCode con pasos por sistema operativo, configuración y verificación.
 
 **Archivos/Carpetas:**
@@ -201,7 +201,7 @@
 
 ---
 
-### - [ ] Task 5.2: Completar contenido del módulo que-es-sdd.html
+### - [x] Task 5.2: Completar contenido del módulo que-es-sdd.html
 **Descripción:** Escribir resumen sobre Spec-Driven Development basado en el documento oficial de GitHub, con enlace incluido.
 
 **Archivos/Carpetas:**
@@ -213,7 +213,7 @@
 
 ---
 
-### - [ ] Task 5.3: Completar contenido del módulo herramientas.html
+### - [x] Task 5.3: Completar contenido del módulo herramientas.html
 **Descripción:** Escribir descripciones de Spec-kit, OpenSpec y Kiro, con tabla comparativa de características principales.
 
 **Archivos/Carpetas:**
@@ -225,7 +225,7 @@
 
 ---
 
-### - [ ] Task 5.4: Completar contenido del módulo prompts.html con botones
+### - [x] Task 5.4: Completar contenido del módulo prompts.html con botones
 **Descripción:** Escribir los tres prompts completos (especificación, plan, tareas) con estructura HTML que incluya botones de copiar para cada uno.
 
 **Archivos/Carpetas:**
@@ -237,7 +237,7 @@
 
 ---
 
-### - [ ] Task 5.5: Completar contenido del módulo ejemplos.html
+### - [x] Task 5.5: Completar contenido del módulo ejemplos.html
 **Descripción:** Crear estructura con tres subsecciones que cargarán y mostrarán los archivos markdown de ejemplo (spec, plan, tasks).
 
 **Archivos/Carpetas:**
@@ -249,7 +249,7 @@
 
 ---
 
-### - [ ] Task 5.6: Completar contenido del módulo practica.html
+### - [x] Task 5.6: Completar contenido del módulo practica.html
 **Descripción:** Escribir descripción del ejercicio práctico Todo Page con requisitos de CRUD y localStorage claramente especificados.
 
 **Archivos/Carpetas:**
@@ -263,7 +263,7 @@
 
 ## Fase 6: Assets y Contenido Markdown
 
-### - [ ] Task 6.1: Crear o conseguir logo del curso
+### - [x] Task 6.1: Crear o conseguir logo del curso
 **Descripción:** Diseñar o conseguir un logo en formato SVG para el curso de SDD y guardarlo en la carpeta assets.
 
 **Archivos/Carpetas:**
@@ -275,7 +275,7 @@
 
 ---
 
-### - [ ] Task 6.2: Crear favicon
+### - [x] Task 6.2: Crear favicon
 **Descripción:** Crear o generar un favicon.ico basado en el logo o identidad del curso.
 
 **Archivos/Carpetas:**
@@ -287,7 +287,7 @@
 
 ---
 
-### - [ ] Task 6.3: Crear archivos markdown de ejemplo
+### - [x] Task 6.3: Crear archivos markdown de ejemplo
 **Descripción:** Copiar o crear los archivos de ejemplo (spec, plan, tasks) en la carpeta exmples para mostrar en la sección de ejemplos.
 
 **Archivos/Carpetas:**
@@ -301,7 +301,7 @@
 
 ---
 
-### - [ ] Task 6.4: Implementar carga de archivos markdown
+### - [x] Task 6.4: Implementar carga de archivos markdown
 **Descripción:** Añadir lógica JavaScript para cargar los archivos markdown desde exmples y mostrarlos formateados en la sección ejemplos.
 
 **Archivos/Carpetas:**
@@ -315,7 +315,7 @@
 
 ## Fase 7: Mejoras y Highlight de Código
 
-### - [ ] Task 7.1: Integrar highlight.js (opcional)
+### - [x] Task 7.1: Integrar highlight.js (opcional)
 **Descripción:** Añadir referencia a highlight.js desde CDN y configurar para resaltar bloques de código en ejemplos y prompts.
 
 **Archivos/Carpetas:**
@@ -328,7 +328,7 @@
 
 ---
 
-### - [ ] Task 7.2: Optimizar lazy loading de módulos
+### - [x] Task 7.2: Optimizar lazy loading de módulos
 **Descripción:** Mejorar la lógica de carga de módulos para evitar cargas duplicadas y optimizar performance mediante caché básico.
 
 **Archivos/Carpetas:**
@@ -342,7 +342,7 @@
 
 ## Fase 8: Testing y Documentación
 
-### - [ ] Task 8.1: Realizar testing cross-browser
+### - [x] Task 8.1: Realizar testing cross-browser
 **Descripción:** Probar el sitio en Chrome, Firefox, Safari y Edge para verificar compatibilidad y funcionalidad completa.
 
 **Archivos/Carpetas:**
@@ -354,7 +354,7 @@
 
 ---
 
-### - [ ] Task 8.2: Realizar testing responsive
+### - [x] Task 8.2: Realizar testing responsive
 **Descripción:** Probar el sitio en dispositivos móvil (< 768px), tablet (768-1024px) y desktop (> 1024px) para verificar diseño responsive.
 
 **Archivos/Carpetas:**
@@ -366,7 +366,7 @@
 
 ---
 
-### - [ ] Task 8.3: Verificar criterios de aceptación
+### - [x] Task 8.3: Verificar criterios de aceptación
 **Descripción:** Revisar sistemáticamente todos los criterios de aceptación listados en spec.md y plan.md para asegurar cumplimiento total.
 
 **Archivos/Carpetas:**
@@ -378,7 +378,7 @@
 
 ---
 
-### - [ ] Task 8.4: Crear documentación en README.md
+### - [x] Task 8.4: Crear documentación en README.md
 **Descripción:** Escribir README.md completo con descripción del proyecto, estructura de archivos, instrucciones de desarrollo local y despliegue en GitHub Pages.
 
 **Archivos/Carpetas:**
