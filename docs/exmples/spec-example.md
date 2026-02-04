@@ -101,3 +101,21 @@ Crear una SPA (Single Page Application) en GitHub Pages para un curso de Spec-Dr
       ├── logo.svg
       └── favicon.ico
   ```
+
+## Requisitos Técnicos
+- Sin dependencias externas (CDN opcional para highlight.js)
+- Compatible con GitHub Pages (sin backend)
+- Performance optimizada (lazy loading de módulos)
+
+## Criterios de Aceptación
+- [ ] Navegación entre secciones sin recarga de página
+- [ ] Menú lateral funcional en desktop y móvil
+- [ ] Todos los prompts con botón de copiar funcionando
+- [ ] Archivos markdown cargados y formateados correctamente
+- [ ] Diseño responsive probado en múltiples dispositivos
+- [ ] Despliegue exitoso en GitHub Pages
+
+## Entregables
+- Código fuente
+- README.md con instrucciones de despliegue
+- GitHub Page publicada y accesible

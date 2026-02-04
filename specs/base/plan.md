@@ -101,8 +101,14 @@ Desarrollar una SPA estática para el curso de Spec-Driven Development, con nave
 ### Elementos Interactivos
 - Botones de copiar con icono y texto de confirmación
 - Enlaces de navegación con hover effect
-- Highlight de código en bloques markdown
+- Highlight de código en bloques markdown (highlight.js)
+- Renderizado de markdown a HTML (marked.js)
 - Transiciones fade entre secciones
+
+### Tecnologías de Visualización
+- **Marked.js**: Librería para convertir markdown a HTML
+- **Highlight.js**: Syntax highlighting de código
+- Ambas cargadas desde CDN
 
 ## Criterios de Aceptación
 
@@ -123,8 +129,9 @@ Desarrollar una SPA estática para el curso de Spec-Driven Development, con nave
 
 ### Técnicos
 - [ ] Sin frameworks externos (vanilla JS)
-- [ ] Sin dependencias obligatorias (highlight.js opcional desde CDN)
+- [ ] Sin dependencias obligatorias (highlight.js y marked.js opcionales desde CDN)
 - [ ] Lazy loading de módulos implementado
+- [ ] Renderizado de markdown funcionando correctamente
 - [ ] Compatible con GitHub Pages
 - [ ] README.md con instrucciones de despliegue incluido
 

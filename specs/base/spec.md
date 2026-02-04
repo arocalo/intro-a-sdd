@@ -22,9 +22,9 @@ Crear una SPA (Single Page Application) en GitHub Pages para un curso de Spec-Dr
 
 ### 3. Spec-kit, OpenSpec y Kiro
 - Descripción individual de cada herramienta:
-  * Spec-kit: framework de especificación
+  * Spec-kit: framework de especificación de GitHub
   * OpenSpec: estándar abierto de especificación
-  * Kiro: herramienta de implementación
+  * Kiro: IDE con IA integrada (AWS) para desarrollo dirigido por especificaciones
 - Tabla comparativa de características principales
 
 ### 4. Prompts para Generación
@@ -71,7 +71,8 @@ Crear una SPA (Single Page Application) en GitHub Pages para un curso de Spec-Dr
 ## Interacciones
 - Transición suave al cambiar de sección
 - Botones de copiar con feedback visual
-- Highlight de código en ejemplos
+- Highlight de código en ejemplos (highlight.js)
+- Renderizado de archivos markdown a HTML (marked.js)
 - Scroll automático al top al navegar
 
 ## Assets
@@ -103,7 +104,8 @@ Crear una SPA (Single Page Application) en GitHub Pages para un curso de Spec-Dr
   ```
 
 ## Requisitos Técnicos
-- Sin dependencias externas (CDN opcional para highlight.js)
+- Sin dependencias externas obligatorias
+- CDN opcional: highlight.js (syntax highlighting) y marked.js (renderizado markdown)
 - Compatible con GitHub Pages (sin backend)
 - Performance optimizada (lazy loading de módulos)
 

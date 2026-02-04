@@ -41,19 +41,22 @@
 
     <h3>Kiro</h3>
     <div class="tool-description">
-        <p><strong>Kiro</strong> es una herramienta de CLI y automatización que ayuda a implementar proyectos basados en especificaciones.</p>
+        <p><strong>Kiro</strong> es un IDE con IA integrada (desarrollado por AWS) que implementa desarrollo dirigido por especificaciones (spec-driven development) con agentes autónomos de IA.</p>
         
         <h4>Características principales:</h4>
         <ul>
-            <li>Generación automática de código a partir de specs</li>
-            <li>Validación de implementaciones contra specs</li>
-            <li>Seguimiento de progreso de tareas</li>
-            <li>Integración con IA para asistencia en implementación</li>
-            <li>Soporte para múltiples lenguajes y frameworks</li>
+            <li>Convierte prompts en lenguaje natural a especificaciones estructuradas con notación EARS</li>
+            <li>Genera diseños arquitectónicos basados en mejores prácticas</li>
+            <li>Crea planes de implementación con tareas discretas y dependencias</li>
+            <li>Agentes autónomos (autopilot mode) que ejecutan tareas complejas</li>
+            <li>CLI disponible para trabajo desde terminal</li>
+            <li>Agent hooks: automatización basada en eventos (ej: generar tests al guardar)</li>
+            <li>Compatible con extensiones y configuraciones de VS Code</li>
+            <li>Gestión avanzada de contexto y steering files para configurar comportamiento de agentes</li>
         </ul>
 
         <h4>Cuándo usar Kiro:</h4>
-        <p>Excelente para acelerar la implementación y mantener la trazabilidad entre especificación y código.</p>
+        <p>Ideal para desarrollo ágil con IA, desde prototipo hasta producción. Especialmente útil para equipos que quieren estructurar su trabajo con specs mientras aceleran la implementación mediante agentes de IA.</p>
     </div>
 
     <h3>Comparativa de Herramientas</h3>
@@ -72,43 +75,38 @@
                     <td>Tipo</td>
                     <td>Framework/Guías</td>
                     <td>Estándar/Schema</td>
-                    <td>CLI/Automatización</td>
+                    <td>IDE/Editor con IA</td>
                 </tr>
                 <tr>
                     <td>Formato</td>
                     <td>Markdown</td>
                     <td>YAML/JSON</td>
-                    <td>Múltiple</td>
+                    <td>Markdown (EARS notation)</td>
                 </tr>
                 <tr>
                     <td>Generación de código</td>
                     <td>❌ No</td>
                     <td>❌ No</td>
-                    <td>✅ Sí</td>
+                    <td>✅ Sí (con agentes IA)</td>
                 </tr>
                 <tr>
                     <td>Validación automática</td>
                     <td>⚠️ Limitada</td>
                     <td>✅ Completa</td>
-                    <td>✅ Completa</td>
+                    <td>✅ Sí (specs vs código)</td>
                 </tr>
-                <tr>
-                    <td>Integración CI/CD</td>
-                    <td>⚠️ Manual</td>
-                    <td>✅ Nativa</td>
-                    <td>✅ Nativa</td>
-                </tr>
+    
                 <tr>
                     <td>Curva de aprendizaje</td>
                     <td>Baja</td>
                     <td>Media</td>
-                    <td>Media-Alta</td>
+                    <td>Baja-Media</td>
                 </tr>
                 <tr>
                     <td>Mejor para</td>
                     <td>Principiantes en SDD</td>
                     <td>Proyectos enterprise</td>
-                    <td>Desarrollo acelerado</td>
+                    <td>Desarrollo ágil con IA avanzada</td>
                 </tr>
             </tbody>
         </table>
@@ -121,7 +119,6 @@
             <li><strong>Empezando con SDD</strong>: Comienza con Spec-kit para aprender los fundamentos</li>
             <li><strong>Proyectos empresariales</strong>: Usa OpenSpec para máxima estructura y validación</li>
             <li><strong>Desarrollo ágil con IA</strong>: Kiro es ideal para acelerar la implementación</li>
-            <li><strong>Mejor combinación</strong>: Spec-kit + Kiro para balance entre simplicidad y automatización</li>
         </ul>
     </div>
 
@@ -132,6 +129,5 @@
             <li><a href="https://openspec.dev" target="_blank" rel="noopener noreferrer">Documentación de OpenSpec</a></li>
             <li><a href="https://kiro.dev" target="_blank" rel="noopener noreferrer">Kiro CLI</a></li>
         </ul>
-        <p><small>Nota: Algunos enlaces son ilustrativos para este ejemplo.</small></p>
     </div>
 </section>

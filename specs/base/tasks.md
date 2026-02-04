@@ -113,6 +113,18 @@
 
 ---
 
+### - [x] Task 3.5: Mejorar estilos de prompts y markdown renderizado
+**Descripción:** Crear estilos específicos para `.prompt-text` y `.example-content` con soporte completo para elementos markdown renderizados.
+
+**Archivos/Carpetas:**
+- `/docs/css/styles.css`
+
+**Dependencias:** Task 3.4
+
+**Done:** Los prompts tienen un diseño mejorado con botón de copiar flotante. Los ejemplos markdown renderizan correctamente headings, listas, código, tablas, blockquotes, enlaces e imágenes con estilos apropiados.
+
+---
+
 ## Fase 4: Funcionalidad JavaScript
 
 ### - [x] Task 4.1: Implementar router SPA básico
@@ -302,29 +314,30 @@
 ---
 
 ### - [x] Task 6.4: Implementar carga de archivos markdown
-**Descripción:** Añadir lógica JavaScript para cargar los archivos markdown desde exmples y mostrarlos formateados en la sección ejemplos.
+**Descripción:** Añadir lógica JavaScript para cargar los archivos markdown desde exmples y convertirlos a HTML usando marked.js.
 
 **Archivos/Carpetas:**
 - `/docs/js/app.js`
+- `/docs/index.html` (incluir CDN de marked.js)
 
 **Dependencias:** Task 6.3, Task 4.1
 
-**Done:** Los tres archivos markdown se cargan dinámicamente via fetch y se muestran con formato básico (respetando saltos de línea y estructura).
+**Done:** Los tres archivos markdown se cargan dinámicamente via fetch, se renderizan a HTML con marked.js y se visualizan correctamente formateados con estilos aplicados.
 
 ---
 
 ## Fase 7: Mejoras y Highlight de Código
 
-### - [x] Task 7.1: Integrar highlight.js (opcional)
-**Descripción:** Añadir referencia a highlight.js desde CDN y configurar para resaltar bloques de código en ejemplos y prompts.
+### - [x] Task 7.1: Integrar highlight.js y marked.js
+**Descripción:** Añadir referencias a highlight.js y marked.js desde CDN. Configurar marked.js para usar highlight.js en bloques de código.
 
 **Archivos/Carpetas:**
-- `/docs/index.html` (para incluir CDN)
-- `/docs/js/app.js` (para inicializar highlight)
+- `/docs/index.html` (para incluir CDNs de marked y highlight.js)
+- `/docs/js/app.js` (para configurar marked con highlight.js)
 
 **Dependencias:** Task 6.4
 
-**Done:** Los bloques de código en módulos se muestran con syntax highlighting aplicado correctamente.
+**Done:** Los archivos markdown se convierten a HTML correctamente y los bloques de código muestran syntax highlighting aplicado.
 
 ---
 
@@ -420,7 +433,7 @@
 
 - **Fase 1:** Configuración Inicial (2 tasks)
 - **Fase 2:** Estructura HTML Base (2 tasks)
-- **Fase 3:** Estilos y Diseño (4 tasks)
+- **Fase 3:** Estilos y Diseño (5 tasks)
 - **Fase 4:** Funcionalidad JavaScript (6 tasks)
 - **Fase 5:** Contenido Específico (6 tasks)
 - **Fase 6:** Assets y Contenido Markdown (4 tasks)
@@ -428,4 +441,4 @@
 - **Fase 8:** Testing y Documentación (4 tasks)
 - **Fase 9:** Despliegue y Validación (2 tasks)
 
-**Total: 32 tasks**
+**Total: 33 tasks**

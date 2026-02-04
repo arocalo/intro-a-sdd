@@ -200,23 +200,38 @@ class SPARouter {
         if (!element) return;
         
         try {
-            const response = await fetch(filePath);
-            if (!response.ok) throw new Error('Archivo no encontrado');
-            
-            const text = await response.text();
+          const response = await fetch(filePath);
+          if (!response.ok) throw new Error("Archivo no encontrado");
+
+          const text = await response.text();
+
+          // Renderizar markdown a HTML
+          if (typeof marked !== "undefined") {
+            // Configurar marked para usar highlight.js
+            marked.setOptions({
+              highlight: function (code, lang) {
+                if (lang && hljs.getLanguage(lang)) {
+                  try {
+                    return hljs.highlight(code, { language: lang }).value;
+                  } catch (err) {}
+                }
+                return code;
+              },
+              breaks: true,
+              gfm: true,
+            });
+
+            element.innerHTML = marked.parse(text);
+          } else {
+            // Fallback si marked no está disponible
             element.textContent = text;
-            element.style.display = 'block';
-            
-            // Ocultar loading
-            const loading = element.parentElement.querySelector('.loading');
-            if (loading) loading.style.display = 'none';
-            
-            // Aplicar syntax highlighting si hay bloques de código
-            if (typeof hljs !== 'undefined') {
-                element.querySelectorAll('pre code').forEach((block) => {
-                    hljs.highlightElement(block);
-                });
-            }
+          }
+
+          element.style.display = "block";
+
+          // Ocultar loading
+          const loading = element.parentElement.querySelector(".loading");
+          if (loading) loading.style.display = "none";
         } catch (error) {
             console.error(`Error cargando ${filePath}:`, error);
             element.textContent = `No se pudo cargar el archivo ${filePath}`;

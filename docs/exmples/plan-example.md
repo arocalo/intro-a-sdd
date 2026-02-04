@@ -98,42 +98,37 @@ Desarrollar una SPA estática para el curso de Spec-Driven Development, con nave
 - **BotonCopiar**: Botón con funcionalidad clipboard
 - **MenuHamburguesa**: Toggle para móvil
 
-## Tecnologías y Herramientas
-
-### Frontend
-- HTML5 semántico
-- CSS3 con variables y Grid/Flexbox
-- JavaScript ES6+ vanilla
-
-### Librerías Externas (CDN)
-- Highlight.js para syntax highlighting de código
-
-### Deployment
-- GitHub Pages desde carpeta `/docs`
-- Sin proceso de build requerido
+### Elementos Interactivos
+- Botones de copiar con icono y texto de confirmación
+- Enlaces de navegación con hover effect
+- Highlight de código en bloques markdown
+- Transiciones fade entre secciones
 
 ## Criterios de Aceptación
 
-### Funcionalidad
-- ✅ Navegación SPA funciona sin recarga
-- ✅ Todos los módulos se cargan correctamente
-- ✅ Botones de copiar funcionan en todos los prompts
-- ✅ Archivos markdown se visualizan formateados
-- ✅ Menú hamburguesa funciona en móvil
-- ✅ Historial del navegador funciona (back/forward)
+### Funcionales
+- [ ] Las 6 secciones navegan sin recarga de página
+- [ ] El menú lateral muestra la sección activa
+- [ ] El menú hamburguesa funciona correctamente en móvil
+- [ ] Todos los prompts se copian al portapapeles correctamente
+- [ ] Los archivos markdown se cargan y visualizan formateados
+- [ ] La URL refleja la sección actual (deep linking)
+- [ ] Los botones back/forward del navegador funcionan
 
 ### Diseño
-- ✅ Tema oscuro aplicado consistentemente
-- ✅ Responsive en móvil, tablet y desktop
-- ✅ Transiciones suaves entre secciones
-- ✅ Código tiene syntax highlighting
+- [ ] Layout responsive en desktop, tablet y móvil
+- [ ] Tema oscuro con paleta de colores GitHub aplicada
+- [ ] Transiciones suaves al cambiar de sección
+- [ ] Código resaltado correctamente en ejemplos
 
-### Performance
-- ✅ Carga inicial rápida (< 3 segundos)
-- ✅ Navegación entre secciones instantánea
-- ✅ Sin errores en consola
+### Técnicos
+- [ ] Sin frameworks externos (vanilla JS)
+- [ ] Sin dependencias obligatorias (highlight.js opcional desde CDN)
+- [ ] Lazy loading de módulos implementado
+- [ ] Compatible con GitHub Pages
+- [ ] README.md con instrucciones de despliegue incluido
 
-### Accesibilidad
-- ✅ Navegación por teclado funcional
-- ✅ Contraste de colores adecuado
-- ✅ Enlaces y botones tienen aria-labels
+### Despliegue
+- [ ] GitHub Page publicada y accesible
+- [ ] Estructura de directorios según spec
+- [ ] Todos los assets presentes
