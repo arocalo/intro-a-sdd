@@ -1,4 +1,4 @@
-Genera un archivo de especificaciones /specs/spec.md de menos de 200 líneas para construir una GitHubPage sobre un curso de Spec-Drive Development (SDD). Esta página se compone de menú lateral que permite navegar entre las distintas secciones HTML del curso:
+Genera un archivo de especificaciones /specs/base/spec.md de menos de 200 líneas para construir una GitHubPage sobre un curso de Spec-Drive Development (SDD). Esta página se compone de menú lateral que permite navegar entre las distintas secciones HTML del curso:
 
 1- Instalación de OpenCode básica
 2- Que es sdd?

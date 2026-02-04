@@ -36,48 +36,49 @@ class SPARouter {
     }
     
     async loadModule() {
-        const hash = window.location.hash.slice(1) || 'instalacion';
+        const hash = window.location.hash.slice(1) || "agentes-cli";
         const modulePath = `modules/${hash}.html`;
-        
+
         // Scroll al top
         this.scrollToTop();
-        
+
         // Actualizar menú activo
         this.updateActiveMenu(hash);
-        
+
         try {
-            // Verificar cache
-            if (this.moduleCache[hash]) {
-                this.contentArea.innerHTML = this.moduleCache[hash];
-            } else {
-                // Mostrar loading
-                this.contentArea.innerHTML = '<div class="loading">Cargando contenido...</div>';
-                
-                // Cargar módulo
-                const response = await fetch(modulePath);
-                if (!response.ok) throw new Error('Módulo no encontrado');
-                
-                const html = await response.text();
-                this.moduleCache[hash] = html;
-                this.contentArea.innerHTML = html;
-            }
-            
-            // Inicializar funcionalidades específicas del módulo
-            this.initModuleFeatures(hash);
-            
-            // Aplicar syntax highlighting
-            if (typeof hljs !== 'undefined') {
-                this.contentArea.querySelectorAll('pre code').forEach((block) => {
-                    hljs.highlightElement(block);
-                });
-            }
+          // Verificar cache
+          if (this.moduleCache[hash]) {
+            this.contentArea.innerHTML = this.moduleCache[hash];
+          } else {
+            // Mostrar loading
+            this.contentArea.innerHTML =
+              '<div class="loading">Cargando contenido...</div>';
+
+            // Cargar módulo
+            const response = await fetch(modulePath);
+            if (!response.ok) throw new Error("Módulo no encontrado");
+
+            const html = await response.text();
+            this.moduleCache[hash] = html;
+            this.contentArea.innerHTML = html;
+          }
+
+          // Inicializar funcionalidades específicas del módulo
+          this.initModuleFeatures(hash);
+
+          // Aplicar syntax highlighting
+          if (typeof hljs !== "undefined") {
+            this.contentArea.querySelectorAll("pre code").forEach((block) => {
+              hljs.highlightElement(block);
+            });
+          }
         } catch (error) {
-            console.error('Error cargando módulo:', error);
-            this.contentArea.innerHTML = `
+          console.error("Error cargando módulo:", error);
+          this.contentArea.innerHTML = `
                 <div class="module-content">
                     <h2>Error</h2>
                     <p>No se pudo cargar el contenido de esta sección.</p>
-                    <p><a href="#instalacion">Volver al inicio</a></p>
+                    <p><a href="#agentes-cli">Volver al inicio</a></p>
                 </div>
             `;
         }
